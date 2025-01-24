@@ -64,6 +64,7 @@ end
 local function change_local_cwd(path)
   vim.cmd("lcd" .. " " .. path)
   print(vim.fn.getcwd())
+  vim.cmd('Dashboard')
 end
 
 local function remap(bufnr, wintype)
